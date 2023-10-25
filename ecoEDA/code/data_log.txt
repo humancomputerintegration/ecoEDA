@@ -1,0 +1,25 @@
+Tue Oct 24 12:14:09 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 12:14:32 2023 ---- NEW_REPLACEMENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 12:14:56 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 12:14:58 2023 ---- NEW_REPLACEMENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:23:19 2023 ---- REVISED DISMISSED PRESSED
+Tue Oct 24 13:23:32 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 13:23:36 2023 ---- NEW_REPLACEMENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:28:54 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 13:28:56 2023 ---- NEW_REPLACEMENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:32:49 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 13:32:51 2023 ---- NEW_REPLACEMENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:33:16 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 13:33:28 2023 ---- DISMISSED COMPONENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:48:19 2023 ---- [KICAD UI]ranked matches for ESP8266EX
+Tue Oct 24 13:48:51 2023 ---- NEW_REPLACEMENT: ecoEDA:Atmel ATWINC1500B_1, OLD COMPONENT: MCU_Espressif:ESP8266EX, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 13:54:47 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 13:55:14 2023 ---- DISMISSED COMPONENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 14:03:26 2023 ---- REVISED DISMISSED PRESSED
+Tue Oct 24 14:03:28 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 14:04:06 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 14:04:44 2023 ---- DISMISSED COMPONENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 14:05:21 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 14:05:43 2023 ---- DISMISSED COMPONENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
+Tue Oct 24 14:06:45 2023 ---- [KICAD UI]diff fp for R
+Tue Oct 24 14:06:51 2023 ---- DISMISSED COMPONENT: ecoEDA:0 Ohm Resistor, OLD COMPONENT: Device:R, FILE: /Users/jasminelu/Documents/00_Research Projects/ecoEDA/test-kicad-project/test-project/test-project.kicad_sch
