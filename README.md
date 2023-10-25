@@ -28,7 +28,7 @@ Suggestion types include (1) exact-match: components that are exactly the same a
 *Bill of Teardowns*
 To assist users with locating their parts and determining what e-waste devices will need to be torn down to source parts for their projects, ecoEDA will generate a bill of teardowns from your project. Similar to a bill of materials, it is a list grouped by source device of components used in your schematic. More details on the [how-to page](./HOWTO.md). 
 
-![Bill of Teardowns overview figure](./Images/BoT.png)
+![Bill of Teardowns overview figure](./Images/BoT.jpg)
 
 *ecoEDA Dashboard*
 To encourage users to keep up with their reuse progress, ecoEDA also tracks the number of projects you use ecoEDA on, the number of recycled parts you've used across projects, and more! More details on the [how-to page](./HOWTO.md). 
