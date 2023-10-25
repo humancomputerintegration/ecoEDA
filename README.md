@@ -21,19 +21,19 @@ As you add new components to your schematic, ecoEDA will search through the liba
 
 ![suggestions popup](./Images/ecoEDApopup.jpg)
 
-![suggestions overview figure](./Images/suggestions-overview.png)
+![suggestions overview figure](./Images/suggestions_overview.png)
 
 Suggestion types include (1) exact-match: components that are exactly the same as the added component, (2) drop-in: components that aren't the same but have the same pin-out and footprint enabling easy swapping in, (3) exact-match, different footprint: components that are the same but have different footprints/packaging, (4) ranked suggestions: allowing users to see a full list of potentially relevant swaps and allow users to filter through this list by value or footprint, and (5) subcircuit suggestions: allowing users to swap in a subcircuit of multiple components from their library that achieve the same function as the original component. More details on the [how-to page](./HOWTO.md). 
 
 *Bill of Teardowns*
 To assist users with locating their parts and determining what e-waste devices will need to be torn down to source parts for their projects, ecoEDA will generate a bill of teardowns from your project. Similar to a bill of materials, it is a list grouped by source device of components used in your schematic. More details on the [how-to page](./HOWTO.md). 
 
-![Bill of Teardowns overview figure](./Images/BoT.jpg)
+![Bill of Teardowns overview figure](./Images/BoT.png)
 
 *ecoEDA Dashboard*
 To encourage users to keep up with their reuse progress, ecoEDA also tracks the number of projects you use ecoEDA on, the number of recycled parts you've used across projects, and more! More details on the [how-to page](./HOWTO.md). 
 
-![ecoEDA dashboard overview figure](./Images/ecoEDAdash.png)
+![ecoEDA dashboard overview figure](./Images/ecoEDAdash.jpg)
 
 ### How to install/use ecoEDA
 To use ecoEDA, you must have installed KiCad (v7+) and Python3 on your machine. The system was built primarily with Mac OS. We have a version for Windows but please note that there have been several issues encountered for Windows.
