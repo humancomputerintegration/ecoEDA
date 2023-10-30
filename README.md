@@ -53,7 +53,8 @@ As this tool was born out of a research project, it is a _prototype_. However, w
 5. Create a new Pull Request
 
 
-## Citation
+## License & Citation
+ecoEDA is released under the [GNU GPL V3](./Software_License.txt). We would love to have you build off our work! Please reach out if we can be helpful in that.
 
 When using or building upon this work in an academic publication, please consider citing as follows:
 
