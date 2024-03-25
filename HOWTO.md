@@ -107,3 +107,6 @@ We aren't sure how to reproduce this error to debug. Let us know if you encounte
 **The suggestions are not for the one that I added**
 
 The code will automatically suggest all symbols on the schematics until you dismiss it. Just dismiss (click X) it if not needed. Manually pressing `ctrl + S` (windows) `cmd + S` (mac) will run through all symbols on the schematics.
+
+**Copy and pasting from other sheets produces parsing errors**
+Using copy and pasted symbols from other schematics produces some parsing errors in our tool and will create issues in writing an updated file. 

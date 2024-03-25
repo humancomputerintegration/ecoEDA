@@ -1,7 +1,7 @@
 # ecoEDA: Recycling E-Waste during Electronics Design
 ![project overview figure](./Images/Fig1.jpg)
 
-This repository contains our software tool, ecoEDA, presented in the paper ["ecoEDA: Recycling E-Waste during Electronics Design"](https://doi.org/10.1145/3586183.3606745), which will appear at UIST2023. The smartwatch is a prototype exploring a living media interface that requires the user to care for the organism (slime mold, aka Physarum Polycephalum) that is integrated inside it in order for the functionality (it's heart rate sensor) to work. This tool was built by Jasmine Lu (@xjasminelu), Beza Desta (@Beza20), Joyce Passananti (@Joyce-Passananti) with project assistance from K.D. Wu, Romain Nith, and Pedro Lopes at the University of Chicago's [Human Computer Integration Lab](https://lab.plopes.org).
+This repository contains our software tool, ecoEDA, presented in the paper ["ecoEDA: Recycling E-Waste during Electronics Design"](https://doi.org/10.1145/3586183.3606745), which appeared at UIST2023. This tool was built by Jasmine Lu (@xjasminelu), Beza Desta (@Beza20), Joyce Passananti (@Joyce-Passananti) with project assistance from K.D. Wu, Romain Nith, and Pedro Lopes at the University of Chicago's [Human Computer Integration Lab](https://lab.plopes.org).
 
 [Paper](https://lab.plopes.org/published/2023-UIST-ecoEDA.pdf) | [Video](https://youtu.be/XYMRXMVBfNg) 
 
@@ -21,7 +21,7 @@ As you add new components to your schematic, ecoEDA will search through the liba
 
 ![suggestions popup](./Images/ecoEDApopup.jpg)
 
-![suggestions overview figure](./Images/suggestions-overview.png)
+![suggestions overview figure](./Images/suggestions_overview.png)
 
 Suggestion types include (1) exact-match: components that are exactly the same as the added component, (2) drop-in: components that aren't the same but have the same pin-out and footprint enabling easy swapping in, (3) exact-match, different footprint: components that are the same but have different footprints/packaging, (4) ranked suggestions: allowing users to see a full list of potentially relevant swaps and allow users to filter through this list by value or footprint, and (5) subcircuit suggestions: allowing users to swap in a subcircuit of multiple components from their library that achieve the same function as the original component. More details on the [how-to page](./HOWTO.md). 
 
@@ -33,7 +33,7 @@ To assist users with locating their parts and determining what e-waste devices w
 *ecoEDA Dashboard*
 To encourage users to keep up with their reuse progress, ecoEDA also tracks the number of projects you use ecoEDA on, the number of recycled parts you've used across projects, and more! More details on the [how-to page](./HOWTO.md). 
 
-![ecoEDA dashboard overview figure](./Images/ecoEDAdash.png)
+![ecoEDA dashboard overview figure](./Images/ecoEDAdash.jpg)
 
 ### How to install/use ecoEDA
 To use ecoEDA, you must have installed KiCad (v7+) and Python3 on your machine. The system was built primarily with Mac OS. We have a version for Windows but please note that there have been several issues encountered for Windows.
@@ -53,7 +53,8 @@ As this tool was born out of a research project, it is a _prototype_. However, w
 5. Create a new Pull Request
 
 
-## Citation
+## License & Citation
+ecoEDA is released under the [GNU GPL V3](./Software_License.txt). We would love to have you build off our work! Please reach out if we can be helpful in that.
 
 When using or building upon this work in an academic publication, please consider citing as follows:
 
