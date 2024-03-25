@@ -35,7 +35,7 @@ For each component, you'll have to fill out the following. Those with an underli
 
 To generate your file, go into the directory code/lib-tools/ and run:
 ```
-python3 lib-generator.py <your csv file>
+python3 lib-generator.py --file <your csv file> --symbol_path <your path to KiCad symbols (most likely in KiCad/SharedSupport)>
 ```
 An updated ecoEDA.kicad-sym file should be produced. Make sure this is in the correct location (in code directory).
 
@@ -49,7 +49,7 @@ First, if you are using a previous *non-Kicad* schematic, use KiCad's tool to co
 In the directory code/lib-tools/, run:
 
 ```
-python3 import_old_sch.py <your .kicad_sch file>
+python3 import_old_sch.py --file <your .kicad_sch file>
 ```
 Now your ecoEDA library (ecoEDA.kicad_sym file) will be updated to include the components specified from your schematic! These will include information that they were sourced from your schematic's project name.
 
