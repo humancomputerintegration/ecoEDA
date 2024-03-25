@@ -5,14 +5,18 @@
 
 # Modified from Kicad Library Utilities
 import os, sys
+
+UTIL_DIR = os.path.realpath(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'util'))
+sys.path.append(UTIL_DIR)
+
 from kicad_sym import *
 from kicad_mod import *
 import csv
 import argparse
 
-def create_ecoEDA_library(csv_file):
+def create_ecoEDA_library(csv_file, symbols_path):
 
-    reader = csv.DictReader(open('test-lib.csv'))
+    reader = csv.DictReader(open(csv_file))
 
 
     from pathlib import Path
@@ -23,7 +27,7 @@ def create_ecoEDA_library(csv_file):
     not_found = False
 
     if Path("../ecoEDA.kicad_sym").is_file():
-        lib = KicadLibrary.from_file('ecoEDA.kicad_sym')
+        lib = KicadLibrary.from_file('../ecoEDA.kicad_sym')
     else:
         lib = KicadLibrary('ecoEDA.kicad_sym')
 
@@ -56,7 +60,7 @@ def create_ecoEDA_library(csv_file):
         if flag == 'Yes':
             orig_sym_lib = KicadLibrary.from_file("Custom_Symbols/" + symlib)
         else:
-            orig_sym_lib = KicadLibrary.from_file("./symbols/" + symlib)
+            orig_sym_lib = KicadLibrary.from_file(symbols_path + symlib)
 
         #get symbol info for symbol to base off of from default libraries
         for symbol in orig_sym_lib.symbols:
@@ -120,7 +124,6 @@ def create_ecoEDA_library(csv_file):
                         new_symbol.arcs.append(Arc(startx_l_arc,mid_arc_start,endx_l_arc,endy_l_arc,center_x+3.5,center_y + 3, stroke_width=0.2, stroke_color=green))
                 
                 n_name = row.pop('Component Name')
-                print(n_name)
                 if n_name in symbol_dict.keys():
                     i = symbol_dict[n_name]['count']
                     orig_name = n_name
@@ -255,12 +258,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", default="",
       help="The csv file with component parts to add to your ecoEDA.kicad_sym file")
+    parser.add_argument("--symbol_path", default="",
+      help="The directory for symbol libraries (often within KiCad/SharedSupport)")
     args = parser.parse_args()
 
-    if(args.file != ""):
+    if (args.file != "") & (args.symbol_path != ""):
         file = args.file
-        lib_sym_dict, prj_name = get_sch_lib_sym_dict(file)
-        lib_arr = gen_lib_info(lib_sym_dict, file, prj_name)
-        write_symbols_to_lib(lib_arr)
+        symbol_path = args.symbol_path
+        create_ecoEDA_library(file, symbol_path)
     else:
-        print("Please specify a csv file.")
+        print("Please specify a csv file or symbol path.")

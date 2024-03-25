@@ -238,11 +238,16 @@ class ecoEDA_Suggester():
         return suggest_dict
 
     def is_drop_in(self, o_name, n_cmpn_dict):
+        return False
+    '''
         if o_name in n_cmpn_dict["Drop-in replacement"].split(",") or o_name in n_cmpn_dict["Drop-in replacement"].split(" "):
+            if self.n_cmpn_dict is None:
+                return False
             if self.n_cmpn_dict["Footprint"] != '' and (self.n_cmpn_dict["Footprint"] is not None) and self.n_cmpn_dict["Footprint"] == self.new_component["Footprint"]:
                 return True
         else:
             return False
+    '''
 
     def split_on_letter(self, s):
         '''

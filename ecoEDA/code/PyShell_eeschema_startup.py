@@ -1437,7 +1437,8 @@ class Ranked_Notif(wx.Frame):
         '''
 
         #NOTIF FRAME STRUCTURE
-        super(Ranked_Notif, self).__init__(parent, pos=(1000,200), size = (320,100), style=wx.FRAME_NO_TASKBAR|wx.STAY_ON_TOP)
+        #super(Ranked_Notif, self).__init__(parent, pos=(1000,200), size = (320,100), style=wx.FRAME_NO_TASKBAR|wx.STAY_ON_TOP)
+        super(Ranked_Notif, self).__init__(parent, pos=(800,200), size = (320,100), style=wx.FRAME_NO_TASKBAR|wx.STAY_ON_TOP)
         panel = wx.Panel(self, style=wx.BORDER_THEME)
         panel.SetOwnBackgroundColour(wx.Colour(177,237,173))
 
@@ -1554,7 +1555,7 @@ class Ranked_List(wx.Frame):
         vbox.Add(hbox,1,wx.ALIGN_CENTER_VERTICAL)
 
         #DISMISS BUTTON
-        btn_x = wx.Button(panel, -1, "x", size = wx.Size(20,20), pos = wx.Point(390,6))
+        btn_x = wx.Button(panel, -1, "x", size = wx.Size(20,20), pos = wx.Point(370,6))
         btn_x.Bind(wx.EVT_BUTTON, self.OnDismiss)
 
         # LIST OF COMPONENTS
