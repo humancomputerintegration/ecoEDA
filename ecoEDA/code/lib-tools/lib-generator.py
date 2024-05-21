@@ -76,7 +76,6 @@ def create_ecoEDA_library(csv_file, symbols_path):
                 valid_symbol = True
             
 
-
             if valid_symbol == True:
                 green = Color(0,255,0,1) # doesn't do anything
                 small = new_symbol.is_small_component_heuristics()
@@ -135,28 +134,36 @@ def create_ecoEDA_library(csv_file, symbols_path):
                 new_symbol.name = n_name
                 new_symbol.libname = "ecoEDA"
                 valid_symbol = False
+                
+                ref = new_symbol.get_property('Reference')
+                ref.idd = 0
             
                 n_val = row.pop('Value')
                 val = new_symbol.get_property('Value')
                 val.value = n_val
+                val.idd = 1
 
                 fp_val = row.pop('Footprint-KICAD-URL')
                 n_fp = fp_val
                 fp = new_symbol.get_property('Footprint')
                 fp.value = n_fp
+                fp.idd = 2
 
                 n_ds = row.pop('Datasheet')
                 ds = new_symbol.get_property('Datasheet')
                 ds.value = n_ds
+                ds.idd = 3
 
                 n_desc = row.pop('Description')
                 desc = new_symbol.get_property('ki_description')
                 if desc == None:
                     desc = Property('ki_description', n_desc, len(new_symbol.properties) + 1)
                     desc.effects.is_hidden = True
+                    desc.idd = 6
                     new_symbol.properties.append(desc)
                 else:
                     desc.value = n_desc
+                    desc.idd = 6
 
                 # desc.value = n_desc
 
@@ -165,9 +172,20 @@ def create_ecoEDA_library(csv_file, symbols_path):
                 if kw == None:
                     kw = Property('ki_keywords', n_kw, len(new_symbol.properties) + 1)
                     kw.effects.is_hidden = True
+                    kw.idd = 5
                     new_symbol.properties.append(kw)
                 else:
                     kw.value = n_kw
+                    kw.idd = 5
+                
+                # added because property ids don't propagate
+                index = 0
+                for prop in new_symbol.properties:
+                    if prop.idd is None:
+                        prop.idd = index
+                    index = index + 1
+                        
+                
 
                 
                 n_src = row.pop('Source')
